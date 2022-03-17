@@ -4,15 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CartContextProvider } from './contexts/CartContext';
+import { AuthContextProvider} from "./contexts/AuthContext"
 
 ReactDOM.render(
   <React.StrictMode>
     <CartContextProvider>
-      <App />
+      <AuthContextProvider>
+        <App />
+      </AuthContextProvider>
     </CartContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
