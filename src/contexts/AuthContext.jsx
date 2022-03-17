@@ -12,6 +12,7 @@ export const AuthContextProvider= ({children}) => {
 		else{
 			return null
 		}
+		// console.log(token)
 	}
 
 	const toggleAuth = () => {

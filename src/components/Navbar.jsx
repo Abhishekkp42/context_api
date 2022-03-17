@@ -29,7 +29,11 @@ export const Navbar = () => {
 	return(
 
         <div>
-            {user ? null : <div> <input type="text" placeholder="id"/><input type="password" placeholder="password"/></div>}
+            {user ? null : <div> <input type="text" placeholder="id"/>
+
+			<input type="password" placeholder="password"/>
+			</div>
+			}
 
             <button onClick={()=>loginUser()}>{user ? "LogOut":"LogIn"}</button>
         </div>
