@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CartContextProvider } from './contexts/CartContext';
+// import { CartContextProvider } from './contexts/CartContext';
 import { AuthContextProvider} from "./contexts/AuthContext"
 
 ReactDOM.render(
   <React.StrictMode>
-    <CartContextProvider>
+    {/* <CartContextProvider> */}
       <AuthContextProvider>
         <App />
       </AuthContextProvider>
-    </CartContextProvider>
+    {/* </CartContextProvider> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
